@@ -38,13 +38,18 @@ function App() {
             deleteSpeed={20}
          />
         </span>
-        <div className="z-50 text-white font-bold text-2xl">
-          <Countdown 
-            date={Date.now() + timeLeft()} 
-            onComplete={() => setNewYearsMessage([
-              "Selamat", "Tahun", "Baru", "HNY2024"
-            ])}
-            />
+        <div className="flex flex-row items-center justify-center gap-x-4 gap-y-4">
+          <div className="z-50 text-white font-bold text-2xl">
+            <Countdown 
+              date={Date.now() + timeLeft()} 
+              onComplete={() => setNewYearsMessage([
+                "Selamat", "Tahun", "Baru", "HNY2024"
+              ])}
+              />
+          </div>
+          <div className="text-yellow-500 font-bold text-2xl z-50">
+            <h2>Goes to 2024</h2>
+          </div>
         </div>
       </div>
     </>
